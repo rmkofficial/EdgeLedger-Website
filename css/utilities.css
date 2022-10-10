@@ -26,24 +26,28 @@
     border-radius: 10px;
 }
 
-.btn-primary, .bg-primary {
+.btn-primary,
+.bg-primary {
     background-color: #28a745;
     color: #fff;
 }
 
-.btn-secondary, .bg-secondary {
+.btn-secondary,
+.bg-secondary {
     background-color: #0284d0;
     color: #fff;
 }
 
-.btn-dark, .bg-dark {
+.btn-dark,
+.bg-dark {
     background-color: #333;
     color: #fff;
 }
 
-.btn-light, .bg-light {
+.btn-light,
+.bg-light {
     background-color: #f4f4f4;
-    color: #fff;
+    /* color: #fff; */
 }
 
 .btn-outline {
@@ -72,6 +76,14 @@
     text-align: center;
     justify-content: center;
     height: 100%;
+}
+
+.flex-items img:hover {
+    opacity: 0.8;
+}
+
+.flex-items a:hover {
+    color: #28a745;
 }
 
 .flex-items>div {
@@ -152,7 +164,7 @@
 
 /* Flex grid */
 
-.flex-grid .row{
+.flex-grid .row {
     display: flex;
     flex-wrap: wrap;
     padding: 0 4px;
@@ -163,4 +175,3 @@
     max-width: 25%;
     padding: 0 4px;
 }
-
