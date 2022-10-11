@@ -47,7 +47,7 @@
 .btn-light,
 .bg-light {
     background-color: #f4f4f4;
-    /* color: #fff; */
+    color: #333;
 }
 
 .btn-outline {
