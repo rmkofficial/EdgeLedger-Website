@@ -19,11 +19,12 @@
     <!-- Header Start -->
     <header class="hero blog">
       <!-- Navbar Start -->
-      <div id="navbar" class="navbar">
-        <h1 class="logo">
+      <div id="navbar" class="navbar top">
+        <a href="index.html"><h1 class="logo">
           <span class="text-primary"> <i class="fas fa-book-open"></i>Edge</span
           >Ledger
-        </h1>
+        </h1></a>
+
         <nav>
           <ul>
             <li><a href="index.html">Home</a></li>
@@ -166,5 +167,20 @@
       <p>Copyright &copy; 2022 - EdgeLedger</p>
     </footer>
     <!-- Footer End -->
+
+    <!-- Script Start -->
+    <script>
+      const navbar = document.getElementById("navbar");
+
+      window.onscroll = function () {
+        if (window.pageYOffset > 100) {
+          navbar.classList.remove("top");
+        } else {
+          navbar.classList.add("top");
+        }
+      };
+    </script>
+    <!-- Script End -->
+
   </body>
 </html>

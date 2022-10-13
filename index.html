@@ -11,6 +11,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="css/lightbox.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/utilities.css" />
     <title>Welcome To EdgeLedger</title>
@@ -19,11 +20,12 @@
     <!-- Header Start -->
     <header class="hero">
       <!-- Navbar Start -->
-      <div id="navbar" class="navbar">
-        <h1 class="logo">
+      <div id="navbar" class="navbar top">
+        <a href="#home"><h1 class="logo">
           <span class="text-primary"> <i class="fas fa-book-open"></i>Edge</span
           >Ledger
-        </h1>
+        </h1></a>
+        
         <nav>
           <ul>
             <li><a href="#home">Home</a></li>
@@ -187,17 +189,29 @@
         <div class="flex-items">
           <div>
             <img src="image_resources/team/mert.jpeg" alt="" />
-            <a href="https://www.linkedin.com/in/ramazanmertkaya/" target="_blank"><h4>Ramazan Mert Kaya</h4></a>
+            <a
+              href="https://www.linkedin.com/in/ramazanmertkaya/"
+              target="_blank"
+              ><h4>Ramazan Mert Kaya</h4></a
+            >
             <p>President</p>
           </div>
           <div>
             <img src="image_resources/team/berk.jpeg" alt="" />
-            <a href="https://www.linkedin.com/in/berk-abay-24b046226/" target="_blank"><h4>Hasan Berk Abay</h4></a>
+            <a
+              href="https://www.linkedin.com/in/berk-abay-24b046226/"
+              target="_blank"
+              ><h4>Hasan Berk Abay</h4></a
+            >
             <p>Vice President</p>
           </div>
           <div>
             <img src="image_resources/team/samed.jpeg" alt="" />
-            <a href="https://www.linkedin.com/in/samed-g%C3%BCne%C5%9F-5508b722a/" target="_blank"><h4>Abdul Samed Güneş</h4></a>
+            <a
+              href="https://www.linkedin.com/in/samed-g%C3%BCne%C5%9F-5508b722a/"
+              target="_blank"
+              ><h4>Abdul Samed Güneş</h4></a
+            >
             <p>Marketing Head</p>
           </div>
         </div>
@@ -218,24 +232,38 @@
               <form action="" class="callback-form">
                 <div class="form-control">
                   <label for="name"></label>
-                  <input type="text" name="name" id="name" placeholder="Enter name">
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Enter name"
+                  />
                 </div>
                 <div class="form-control">
                   <label for="email"></label>
-                  <input type="email" name="email" id="email" placeholder="Enter email">
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Enter email"
+                  />
                 </div>
                 <div class="form-control">
                   <label for="phone"></label>
-                  <input type="text" name="phone" id="phone" placeholder="Enter phone">
+                  <input
+                    type="text"
+                    name="phone"
+                    id="phone"
+                    placeholder="Enter phone"
+                  />
                 </div>
-                <input type="submit" value="Send" id="subnmit" class="btn">
+                <input type="submit" value="Send" id="subnmit" class="btn" />
               </form>
             </div>
           </div>
         </div>
       </section>
       <!-- Contact End -->
-
     </main>
     <!-- Main End -->
 
@@ -244,12 +272,34 @@
       <div class="social">
         <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
         <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
-        <a href="https://www.instagram.com/rmkboi/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
-        <a href="https://www.linkedin.com/in/ramazanmertkaya/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+        <a href="https://www.instagram.com/rmkboi/" target="_blank"
+          ><i class="fab fa-instagram fa-2x"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/ramazanmertkaya/" target="_blank"
+          ><i class="fab fa-linkedin fa-2x"></i
+        ></a>
       </div>
       <p>Copyright &copy; 2022 - EdgeLedger</p>
     </footer>
     <!-- Footer End -->
+
+    <!-- Script Start -->
+    <script src="js/lightbox.min.js">
+
+    </script>
+    
+    <script>
+      const navbar = document.getElementById("navbar");
+
+      window.onscroll = function () {
+        if (window.pageYOffset > 100) {
+          navbar.classList.remove("top");
+        } else {
+          navbar.classList.add("top");
+        }
+      };
+    </script>
+    <!-- Script End -->
 
   </body>
 </html>
